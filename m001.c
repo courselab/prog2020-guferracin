@@ -40,7 +40,11 @@ int greatest (int a, int b, int c)
   if ( c > a , c > b)
   {
     g=c;
-  
+  }
+  else 
+  if (a==c , a==b , b==c)
+  {
+    g=a;
   }
   return g;
 }
