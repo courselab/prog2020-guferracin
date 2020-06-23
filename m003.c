@@ -21,10 +21,26 @@
 
 /* Verify if the positive integer 'a' is prime. */
 
-int is_prime (int a)
-{
-  return 0;
+int is_prime (int a) /* número testado */
+ {
+  int x, resto, n = 0;
+  for (x=1; x<=a; x++) 
+  {
+    resto = a%x;
+    if (resto == 0) 
+    {
+      n = n+1;
+    }
+  }
+  if (n==1 || n==2) 
+  {
+    return 1;
+  } else 
+  {
+    return 0;
+  }
 }
+
 
 #define USAGE "m003 <num>\n"
 
@@ -32,7 +48,7 @@ int is_prime (int a)
 
 int main (int argc, char **argv)
 {
-  int n;
+ int n;
 
   if (argc < 2)
     {
@@ -44,6 +60,6 @@ int main (int argc, char **argv)
   n = atoi (argv[1]);
 
   printf("%d\n", is_prime (n));
-  
-  return 0;
+
+return 0;
 }
