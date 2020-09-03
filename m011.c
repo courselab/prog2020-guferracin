@@ -28,6 +28,9 @@
 
 int wordcount (char *filename)
 {
+  int x;
+  int n;
+  while (filename[x] = ' ')
   return 0;
 }
 

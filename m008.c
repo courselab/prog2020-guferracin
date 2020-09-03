@@ -28,9 +28,9 @@
 /* Converts the string 's' from first-middle-last name 
    form into LAST-first-middle form. */
 
-void lastname (char *s)
+void lastname(char *s) 
 {
-}
+ 
 
 
 
